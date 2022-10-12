@@ -8,7 +8,6 @@ const ViewPage = () => {
 
   const { artId } = useParams()
   const history = useHistory()
-  console.log(artId);
   const { data, isFetching } = useGetArtDetailsQuery({ id:artId });
   const artDetails = data?.data;
   if (isFetching) {
@@ -45,7 +44,7 @@ const ViewPage = () => {
                 { artDetails.title }
               </h2>
               <p className='text-lg'>
-                Browse a curated selection of art around the world, including Museum ehibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including museum exhibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including Museum ehibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including museum exhibitions, gallery openings, upcoming and many more.
+                { artDetails?.thumbnail?.alt_text }
               </p>
             </div>
             <div className='flex gap-4'>

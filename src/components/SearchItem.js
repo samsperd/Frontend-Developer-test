@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchItem = ({ title, image_id, imageHeight, imageWidth, location, startYear, endYear, artistName }) => {
+const SearchItem = ({ title, image_id }) => {
 
     const getImage = (imageId) => {
         if (imageId == null) {
@@ -15,14 +15,8 @@ const SearchItem = ({ title, image_id, imageHeight, imageWidth, location, startY
         <div className="flex w-full items-center h-80 overflow-hidden justify-center">
             <img src={getImage(image_id)} alt="/" />
         </div>
-        <div className='px-3 py-2'>
-            <h3 className='font-bold'>{ title } <span className='font-normal'> - { artistName }</span> </h3>
-            <p className='text-sm'>
-                { startYear } - { endYear }
-            </p>
-            <p>
-                { location }
-            </p>
+        <div className='px-3 py-5 mb-3'>
+            <h3 className='font-bold'>{ title }</h3>
         </div>
     </div>
   )

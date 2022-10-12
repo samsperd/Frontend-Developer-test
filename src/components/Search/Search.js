@@ -40,7 +40,7 @@ const Search = () => {
                 {
                   searchList.map((e, i) => (
                         <Link key={i} to={`/view-page/${e?.id}`} >
-                        <SearchItem key={i} title={e?.title} image_id={e?.image_id} imageHeight={e?.thumbnail?.height} imageWidth={e?.thumbnail?.width} location={e?.place_of_origin} startYear={e?.date_start} endYear={e?.date_end} artistName={e?.artist_title} />
+                        <SearchItem key={i} title={e?.title} alt_text={e?.thumbnail?.alt_text} />
                         </Link>
                     ))
                 }
