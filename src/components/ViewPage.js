@@ -44,7 +44,8 @@ const ViewPage = () => {
                 { artDetails.title }
               </h2>
               <p className='text-lg'>
-                { artDetails?.thumbnail?.alt_text }
+              { artDetails?.thumbnail?.alt_text || 'Browse a curated selection of art around the world, including Museum ehibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including museum exhibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including Museum ehibitions, gallery openings, upcoming and many more. Browse a curated selection of art around the world, including museum exhibitions, gallery openings, upcoming and many more.'}
+                
               </p>
             </div>
             <div className='flex gap-4'>
