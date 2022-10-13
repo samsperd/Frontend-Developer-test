@@ -50,7 +50,7 @@ const Search = () => {
                   onPageChange={(e) => handlePageChange(e)}
                   breakLabel="..."
                   nextLabel="next >"
-                  pageRangeDisplayed={5}
+                  pageRangeDisplayed={2}
                   previousLabel="< previous"
                   renderOnZeroPageCount={null}
                   containerClassName={'flex gap-4 w-full'}
