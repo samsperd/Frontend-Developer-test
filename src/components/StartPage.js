@@ -4,7 +4,7 @@ import SimpleExplore from './SimpleExplore'
 
 const StartPage = () => {
   return (
-    <div className=' pb-40'>
+    <div className='w-full pb-40'>
         <Hero />
         <SimpleExplore />
     </div>

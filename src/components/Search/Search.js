@@ -53,7 +53,7 @@ const Search = () => {
                   pageRangeDisplayed={5}
                   previousLabel="< previous"
                   renderOnZeroPageCount={null}
-                  containerClassName={'flex gap-4'}
+                  containerClassName={'flex gap-4 w-full'}
                   forcePage={currentPage}
 					breakClassName={'page'}
 					nextLinkClassName={'page'}
