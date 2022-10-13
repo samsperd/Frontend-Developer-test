@@ -33,7 +33,7 @@ const ViewPage = () => {
           </span>
         </div>
         <div className='md:flex justify-center w-full'>
-          <div className='flex-1 flex justify-center'>
+          <div className='flex-1 flex justify-center bg-gradient-to-tr from-[#5e4b03] to-black'>
             <div className='h-[500px] bg-gray-500 w-96 shadow-md rounded-br-[9.7rem] rounded-tl-[9.7rem] overflow-hidden bg-contain' style={{ backgroundImage: `url(${getImage(artDetails?.image_id)})` }}>
               {/* <img src={getImage(artDetails?.image_id)} alt="/" /> */}
             </div>
