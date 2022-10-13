@@ -8,7 +8,7 @@ import Search from "./components/Search/Search";
 
 function App() {
   return (
-    <div className="App bg-black">
+    <div className="App bg-black w-full">
       <NavBar />
       <Switch>
         <Route exact path={'/'}>
