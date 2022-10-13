@@ -24,7 +24,7 @@ const ViewPage = () => {
   return (
     <div className='md:h-screen py-10 text-white w-full'>
       <div className='h-full w-full px-5'>
-        <div className='flex justify-between py-2'>
+        <div className='flex justify-between py-3'>
           <span onClick={() => history.goBack()}>
             <AiOutlineArrowLeft size={'30px'} />
           </span>
