@@ -33,7 +33,7 @@ const SimpleExplore = () => {
                 {
                     arts.map((e, i) => (
                         <Link key={i} to={`/view-page/${e?.id}`} >
-                        <ArtItem key={i} title={e?.title} image_id={e?.image_id} imageHeight={e?.thumbnail?.height} imageWidth={e?.thumbnail?.width} location={e?.place_of_origin} startYear={e?.date_start} endYear={e?.date_end} artistName={e?.artist_title} />
+                        <ArtItem key={i} title={e?.title} image_id={e?.image_id} location={e?.place_of_origin} startYear={e?.date_start} endYear={e?.date_end} artistName={e?.artist_title} />
                         </Link>
                     ))
                 }

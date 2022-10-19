@@ -36,16 +36,18 @@ const Search = () => {
           </div>
         </div>
         <div className='w-full'>
-        <div className="w-full md:grid grid-cols-3">
+        <div className="w-full md:grid grid-cols-3 gap-4">
                 {
                   searchList.map((e, i) => (
                         <Link key={i} to={`/view-page/${e?.id}`} >
-                        <SearchItem key={i} title={e?.title} alt_text={e?.thumbnail?.alt_text} />
+                        <SearchItem key={i} artId={e?.id} alt_text={e?.thumbnail?.alt_text} />
                         </Link>
                     ))
                 }
               </div>
-              <ReactPaginate
+              {
+                searchList.length > 0 && (
+                  <ReactPaginate
                   pageCount={pageCount}
                   onPageChange={(e) => handlePageChange(e)}
                   breakLabel="..."
@@ -54,9 +56,11 @@ const Search = () => {
                   previousLabel="< previous"
                   renderOnZeroPageCount={null}
                   containerClassName={'flex gap-4 w-full'}
-					disabledClassName={'text-gray-300'}
-					activeClassName={'text-yellow-400'}                  
+                  disabledClassName={'text-gray-300'}
+                  activeClassName={'text-yellow-400'}
                 />
+                )
+              }
 
 
 

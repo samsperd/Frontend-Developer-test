@@ -16,7 +16,7 @@ const ArtItem = ({ title, image_id, location, startYear, endYear, artistName }) 
             <img src={getImage(image_id)} alt="/" />
         </div>
         <div className='px-3 py-2'>
-            <h3 className='font-bold'>{ title } <span className='font-normal'> - { artistName }</span> </h3>
+            <h3 className='font-bold'>{ title } { artistName && (<span className='font-normal'> - { artistName }</span>) }  </h3>
             <p className='text-sm'>
                 { startYear } - { endYear }
             </p>
