@@ -34,8 +34,8 @@ const Hero = () => {
             </div>
         </div>
         <div className=' hidden md:flex justify-end pr-14'>
-            <div className='bg-yellow-400 border-r-[10px] border-b-[10px] rounded-bl-[6rem] border-t-[1px] rounded-tr-[6rem] border-yellow-400 w-3/5 max-h-[28rem]'>
-                <img src={getImage(arts[0]?.image_id)} alt="/"  className='justify-center bg-white rounded-bl-[5rem] rounded-tr-[5rem] text-black w-full h-full' />
+            <div className='bg-yellow-400 border-r-[16px] border-b-[16px] rounded-bl-[8rem] rounded-tr-[8rem] border-yellow-400 w-3/5 max-h-[28rem]'>
+                <img src={getImage(arts[0]?.image_id)} alt="/"  className='justify-center bg-white rounded-bl-[6rem] rounded-tr-[6rem] text-black w-full h-full' />
             </div>
         </div>
     </div>

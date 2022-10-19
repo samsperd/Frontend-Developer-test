@@ -11,7 +11,7 @@ const ArtItem = ({ title, image_id, location, startYear, endYear, artistName }) 
 
 
   return (
-    <div className='h-auto shadow-md rounded-br-[9.7rem] rounded-tl-[9.7rem] overflow-hidden bg-[#14000069] hover:scale-105 ease-in duration-300'>
+    <div className='h-auto shadow-md rounded-br-[9.7rem] rounded-tl-[9.7rem] overflow-hidden bg-[#14000069] hover:scale-105 ease-in duration-300 my-3'>
         <div className="flex w-full items-center h-80 overflow-hidden justify-center">
             <img src={getImage(image_id)} alt="/" />
         </div>
